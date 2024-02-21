@@ -1,0 +1,24 @@
+@baseUrl = http://localhost:9000/todos
+
+POST {{baseUrl}}/
+Content-Type: application/json
+username: username
+password: password
+
+{
+  "title": "Buy Milk",
+  "description": "Buy 10 kg milk every week"
+}
+
+GET {{baseUrl}}/
+username: username
+password: password
+
+GET {{baseUrl}}/450f2fdf
+username: username
+password: password
+
+DELETE {{baseUrl}}/450f2fdf
+username: username
+password: password
+
