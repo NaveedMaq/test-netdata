@@ -36,6 +36,8 @@ app.use((req, res, next) => {
     statsd.increment(
       `api_${method}_${route.replace(/\//g, '_')}.status_code.${status}`
     );
+
+    console.log('logged to statsd');
   });
 
   next();
